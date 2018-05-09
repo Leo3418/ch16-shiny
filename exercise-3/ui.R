@@ -11,10 +11,10 @@ shinyUI(fluidPage(
   h1("MPG Dataset Exploration"),
   
   # Add a select input for the x variable
-  selectInput("x_var", "X variable", select_values, selected = "manufacturer"),
+  selectInput("x_var", "X Variable", select_values, selected = "manufacturer"),
   
   # Add a select input for the y variable
-  selectInput("y_var", "Y variable", select_values, selected = "displ"),
+  selectInput("y_var", "Y Variable", select_values, selected = "displ"),
 
   # Add a sliderInput to set the size of each point
   sliderInput("size", "Size of point", 1, 10, 7),
