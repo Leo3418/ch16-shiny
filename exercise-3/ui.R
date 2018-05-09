@@ -20,7 +20,9 @@ shinyUI(fluidPage(
   sliderInput("size", "Size of point", 1, 10, 7),
 
   # Add a selectInput that allows you to select a color from a list of choices
-  selectInput("color", "Color", c("Red", "Blue", "Green"), selected = "Blue"),
+  selectInput(
+    "color", "Color", c("Black", "Red", "Blue", "Green"), selected = "Blue"
+  ),
 
   # Plot the output with the name "scatter"
   plotOutput("scatter")
